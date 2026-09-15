@@ -105,11 +105,11 @@ export const projects: Project[] = [
     stack: ['HTML', 'CSS', 'JavaScript'],
     intro: {
       pt: 'Landing page profissional em produção (jbarbosa.com.br). Site estático rápido e responsivo, feito com HTML, CSS e JavaScript puro sem frameworks.',
-      en: 'Professional landing page in production (jbarbosa.com.br). Fast, responsive static site built with plain HTML, CSS and JavaScript — no frameworks.',
+      en: 'Professional landing page in production (jbarbosa.com.br). Fast, responsive static site built with plain HTML, CSS and JavaScript, no frameworks.',
     },
     description: {
       pt: 'Landing page profissional em produção (jbarbosa.com.br). Site estático rápido e responsivo, feito com HTML, CSS e JavaScript puro sem frameworks.',
-      en: 'Professional landing page in production (jbarbosa.com.br). Fast, responsive static site built with plain HTML, CSS and JavaScript — no frameworks.',
+      en: 'Professional landing page in production (jbarbosa.com.br). Fast, responsive static site built with plain HTML, CSS and JavaScript, no frameworks.',
     },
     live: { href: 'https://jbarbosa.com.br/' },
     // cover: '/projects/lp-barbosa/jbarbosa.png',
@@ -148,7 +148,7 @@ export const projects: Project[] = [
     },
     description: {
       pt: 'Site institucional one-page da Lessa Club, marca de roupas everyday (peças básicas em poliamida dupla premium). A página apresenta a coleção de três modelos (Shoulder, Essence, Babytee), conta a história da fundadora (Camille), explica o processo de compra e direciona toda a venda para o WhatsApp — não há carrinho, checkout ou backend próprio. O projeto inclui uma abertura animada (intro) embutida na própria página: a palavra "lessa" é revelada com um ponto de luz dourada acompanhando a escrita, seguida de um efeito de "ignição" na cor da marca e um zoom que dissolve para revelar o site. Aparece uma vez por sessão e respeita a preferência de "reduzir animações" do usuário.',
-      en: 'One-page institutional site for Lessa Club, an everyday clothing brand (basic pieces in premium double polyamide). The page presents the collection of three models (Shoulder, Essence, Babytee), tells the founder\'s story (Camille), explains the purchase process, and routes all sales to WhatsApp — there\'s no cart, checkout, or backend of its own. The project includes an animated intro built into the page itself: the word "lessa" is revealed with a golden point of light following the writing, followed by an "ignition" effect in the brand color and a zoom that dissolves to reveal the site. It appears once per session and respects the user\'s "reduce motion" preference.',
+      en: 'One-page institutional site for Lessa Club, an everyday clothing brand (basic pieces in premium double polyamide). The page presents the collection of three models (Shoulder, Essence, Babytee), tells the founder\'s story (Camille), explains the purchase process, and routes all sales to WhatsApp, with no cart, checkout, or backend of its own. The project includes an animated intro built into the page itself: the word "lessa" is revealed with a golden point of light following the writing, followed by an "ignition" effect in the brand color and a zoom that dissolves to reveal the site. It appears once per session and respects the user\'s "reduce motion" preference.',
     },
     // link: { href: 'https://github.com/DerekCardoso' },
     // cover: '/projects/lessa/hero.png',
@@ -176,7 +176,7 @@ export const timeline: TimelineEntry[] = [
   {
     company: 'GymBro',
     role: { pt: 'Desenvolvedor Frontend/Fullstack Mobile', en: 'Frontend/Fullstack Mobile Developer' },
-    year: { pt: '2025 — hoje', en: '2025 — present' },
+    year: { pt: '2025 — hoje', en: '2025–present' },
     items: {
       pt: [
         'Desenho e implemento de ponta a ponta o fluxo de matchmaking do cadastro ao match compatível por academia, horário, grupo muscular e intensidade sustentado por convites, chat e gestão de parceiros',
@@ -186,7 +186,7 @@ export const timeline: TimelineEntry[] = [
         'Endureço privacidade e segurança (LGPD, aceite/reaceite de termos, exclusão de conta em duas fases e regras de acesso a dados) e mantenho testes automatizados e CI para qualidade de tipo',
       ],
       en: [
-        'I design and implement the matchmaking flow end-to-end — from sign-up to a compatible match by gym, schedule, muscle group and intensity — sustained by invites, chat and partner management',
+        'I design and implement the matchmaking flow end-to-end: from sign-up to a compatible match by gym, schedule, muscle group and intensity, sustained by invites, chat and partner management',
         'I build the app in React Native with Expo and strict TypeScript, organizing the architecture in service layers, persisted state, feature-based screens and a custom design system',
         'I develop the full workout module (weekly routines, active workout with timer and rest, load logging, personal records and progression suggestions) with careful native UX (navigation, sheets, haptics)',
         'I manage local state and persistence, data validation, and integration with a serverless backend for authentication and a real-time database',
@@ -197,7 +197,7 @@ export const timeline: TimelineEntry[] = [
   {
     company: 'Cotraservi (Coob+)',
     role: { pt: 'Frontend Developer', en: 'Frontend Developer' },
-    year: { pt: '2022 — hoje', en: '2022 — present' },
+    year: { pt: '2022 — hoje', en: '2022–present' },
     items: {
       pt: [
         'Desenvolvo e evoluo aplicação React para uso operação comercial, traduzindo regras de negócio em fluxos de tela usáveis',
@@ -247,9 +247,9 @@ export const about = {
       'No fluxo do dia a dia, uso Claude e ChatGPT como parceiros de trabalho: entrego mais rápido sem abrir mão da qualidade do código.',
     ],
     en: [
-      "I started tinkering with small components and got hooked on turning ideas into interfaces — the kind of work where a spacing detail or a well-crafted transition changes how someone feels about a product.",
+      "I started tinkering with small components and got hooked on turning ideas into interfaces: the kind of work where a spacing detail or a well-crafted transition changes how someone feels about a product.",
       'Today I work as a Frontend Developer at Cotraservi (Coob+), always balancing performance, accessibility, and a good user experience.',
-      "Outside of work, I dove headfirst into mobile: I'm building GymBro, a React Native app to find workout partners, from concept to product — geolocation, matching, and everything else, on my own.",
+      "Outside of work, I dove headfirst into mobile: I'm building GymBro, a React Native app to find workout partners, from concept to product (geolocation, matching, and everything else) on my own.",
       'In my day-to-day workflow, I use Claude and ChatGPT as work partners: I ship faster without giving up code quality.',
     ],
   } as LocalizedList,
