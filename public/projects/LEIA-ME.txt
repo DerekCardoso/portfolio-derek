@@ -1,0 +1,9 @@
+Coloque aqui as imagens dos projetos e aponte no campo `image` de cada projeto
+em src/data/content.ts. Exemplo:
+
+  image: '/projects/gymbro.jpg'
+
+Proporção recomendada: 2:3 (retrato), a mesma do site de referência.
+Tamanho sugerido: 600x900 px. Formatos: jpg, png ou webp.
+
+Projeto sem `image` simplesmente não mostra nada no hover — nada quebra.
