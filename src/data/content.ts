@@ -72,7 +72,7 @@ export const projects: Project[] = [
       en: 'MVP for operational management of Business Plans: distributes work by team load, flags deadline conflicts, and tracks the production pipeline in a Kanban.',
     },
     description: {
-      pt: 'O sistema ajuda admins a criar e atribuir Business Plans e writers a atualizar o status do próprio trabalho. Ele recomenda quem tem menor carga (não bloqueia a atribuição), destaca atrasos e conflitos de entrega na mesma data, e registra histórico via trigger no banco. Papéis: Admin (cria/arquiva/reatribui, gerencia usuários e escritórios) e Writer (lê todos os BPs, muda só o próprio status).',
+      pt: 'O sistema ajuda admins a criar e atribuir Business Plans e writers a atualizar o status do próprio trabalho. Ele recomenda quem tem menor carga (não bloqueia a atribuição), destaca atrasos e conflitos de entrega na mesma data e registra histórico via trigger no banco. Papéis: Admin (cria/arquiva/reatribui, gerencia usuários e escritórios) e Writer (lê todos os BPs, muda só o próprio status).',
       en: "The system helps admins create and assign Business Plans, while writers update the status of their own work. It recommends who has the lowest workload (without blocking the assignment), highlights delays and same-date delivery conflicts, and logs history via a database trigger. Roles: Admin (creates/archives/reassigns, manages users and offices) and Writer (reads all BPs, only changes their own status).",
     },
     // link: { href: 'https://github.com/DerekCardoso' },
@@ -90,7 +90,7 @@ export const projects: Project[] = [
       en: "Complete redesign of IRI Brasil's institutional website, with environmental campaigns, a CO2 calculator, and a materials library focused on the Legal Amazon.",
     },
     description: {
-      pt: 'Projeto de redesign completo do site institucional do IRI Brasil, com linha visual inspirada em sites modernos. Apresenta as campanhas e a atuação da organização, foco na Amazônia Legal (causa ambiental/climática, com braço de mobilização religiosa), através de páginas como a campanha "Ar Puro", calculadora de CO2, biblioteca de materiais e mapa de ações territoriais. O Next.js simula um backend no front, puxando conteúdo do Google Drive (API v3, conta de serviço) como camada de dados/CMS, sem precisar de banco de dados. Deploy na Vercel, e repositório no GitHub.',
+      pt: 'Projeto de redesign completo do site institucional do IRI Brasil, com linha visual inspirada em sites modernos. Apresenta as campanhas e a atuação da organização, com foco na Amazônia Legal (causa ambiental/climática, com braço de mobilização religiosa), através de páginas como a campanha "Ar Puro", calculadora de CO2, biblioteca de materiais e mapa de ações territoriais. O Next.js simula um backend no front, puxando conteúdo do Google Drive (API v3, conta de serviço) como camada de dados/CMS, sem precisar de banco de dados. Deploy na Vercel e repositório no GitHub.',
       en: 'Complete redesign project for IRI Brasil\'s institutional website, with a visual style inspired by modern sites. It presents the organization\'s campaigns and work, focused on the Legal Amazon (an environmental/climate cause with a faith-based mobilization arm), through pages like the "Ar Puro" campaign, a CO2 calculator, a materials library, and a map of territorial actions. Next.js simulates a backend on the frontend, pulling content from Google Drive (API v3, service account) as a data/CMS layer, without needing a database. Deployed on Vercel, with a repository on GitHub.',
     },
     // live: { href: 'https://iribrasil.org' },
@@ -104,11 +104,11 @@ export const projects: Project[] = [
     category: { pt: 'Landing Page', en: 'Landing Page' },
     stack: ['HTML', 'CSS', 'JavaScript'],
     intro: {
-      pt: 'Landing page profissional em produção (jbarbosa.com.br). Site estático rápido e responsivo, feito com HTML, CSS e JavaScript puro sem frameworks.',
+      pt: 'Landing page profissional em produção (jbarbosa.com.br). Site estático rápido e responsivo, feito com HTML, CSS e JavaScript puro, sem frameworks.',
       en: 'Professional landing page in production (jbarbosa.com.br). Fast, responsive static site built with plain HTML, CSS and JavaScript, no frameworks.',
     },
     description: {
-      pt: 'Landing page profissional em produção (jbarbosa.com.br). Site estático rápido e responsivo, feito com HTML, CSS e JavaScript puro sem frameworks.',
+      pt: 'Landing page profissional em produção (jbarbosa.com.br). Site estático rápido e responsivo, feito com HTML, CSS e JavaScript puro, sem frameworks.',
       en: 'Professional landing page in production (jbarbosa.com.br). Fast, responsive static site built with plain HTML, CSS and JavaScript, no frameworks.',
     },
     live: { href: 'https://jbarbosa.com.br/' },
@@ -179,7 +179,7 @@ export const timeline: TimelineEntry[] = [
     year: { pt: '2025–hoje', en: '2025–present' },
     items: {
       pt: [
-        'Desenho e implemento de ponta a ponta o fluxo de matchmaking do cadastro ao match compatível por academia, horário, grupo muscular e intensidade sustentado por convites, chat e gestão de parceiros',
+        'Desenho e implemento de ponta a ponta o fluxo de matchmaking do cadastro ao match compatível por academia, horário, grupo muscular e intensidade, sustentado por convites, chat e gestão de parceiros',
         'Construo o app em React Native com Expo e TypeScript estrito, organizando a arquitetura em camadas de serviços, estado persistido, telas por feature e um design system próprio',
         'Desenvolvo o módulo completo de treinos (rotinas semanais, treino ativo com timer e descanso, registro de cargas, recordes pessoais e sugestão de progressão) com experiência nativa cuidada (navegação, sheets, haptics)',
         'Gerencio estado e persistência local, validação de dados e integração com backend serverless para autenticação e banco de dados em tempo real',
@@ -200,7 +200,7 @@ export const timeline: TimelineEntry[] = [
     year: { pt: '2022–hoje', en: '2022–present' },
     items: {
       pt: [
-        'Desenvolvo e evoluo aplicação React para uso operação comercial, traduzindo regras de negócio em fluxos de tela usáveis',
+        'Desenvolvo e evoluo aplicação React para uso da operação comercial, traduzindo regras de negócio em fluxos de tela usáveis',
         'Integro o frontend a web services SOAP/ASMX legados, tratando sessões e permissões entre Redux e localStorage',
         'Construo componentes reutilizáveis e design systems, com foco em performance, acessibilidade e qualidade de código',
         'Colaboro em sprints ágeis com o time, priorizando código limpo e boas práticas em um sistema legado crítico para a receita',
@@ -219,7 +219,7 @@ export const timeline: TimelineEntry[] = [
     year: { pt: '2022', en: '2022' },
     items: {
       pt: [
-        'Implementei sistemas de autenticação robustos a nível de investidor, garantindo segurança e conformidade com padrões financeiros rigorosos',
+        'Implementei sistemas de autenticação robustos em nível de investidor, garantindo segurança e conformidade com padrões financeiros rigorosos',
         'Desenvolvi componentes reutilizáveis alinhados com a arquitetura da plataforma, promovendo consistência e reduzindo débito técnico',
         'Otimizei código e padrões estabelecidos, melhorando manutenibilidade e produtividade do time',
         'Adquiri experiência prática com ambiente permissionado e criptografado em instituições financeiras',
@@ -241,7 +241,7 @@ export const about = {
   } as Localized,
   paragraphs: {
     pt: [
-      'Comecei mexendo em pequenos componentes mas viciei em transformar ideia em interface o tipo de trabalho onde um detalhe de espaçamento ou uma transição bem-feita muda como a pessoa sente o produto.',
+      'Comecei mexendo em pequenos componentes, mas viciei em transformar ideia em interface: o tipo de trabalho onde um detalhe de espaçamento ou uma transição bem-feita muda como a pessoa sente o produto.',
       'Hoje atuo como Frontend Developer na Cotraservi (Coob+), sempre equilibrando performance, acessibilidade e uma boa experiência de uso.',
       'Fora do expediente, mergulhei de cabeça em mobile: construo o GymBro, um app em React Native para encontrar parceiro de treino, do conceito ao produto. Geolocalização, matching e tudo mais, sozinho.',
       'No fluxo do dia a dia, uso Claude e ChatGPT como parceiros de trabalho: entrego mais rápido sem abrir mão da qualidade do código.',
