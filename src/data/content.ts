@@ -147,7 +147,7 @@ export const projects: Project[] = [
       en: "One-page institutional site for Lessa Club, an everyday clothing brand, with an animated intro built into the page itself.",
     },
     description: {
-      pt: 'Site institucional one-page da Lessa Club, marca de roupas everyday (peças básicas em poliamida dupla premium). A página apresenta a coleção de três modelos (Shoulder, Essence, Babytee), conta a história da fundadora (Camille), explica o processo de compra e direciona toda a venda para o WhatsApp — não há carrinho, checkout ou backend próprio. O projeto inclui uma abertura animada (intro) embutida na própria página: a palavra "lessa" é revelada com um ponto de luz dourada acompanhando a escrita, seguida de um efeito de "ignição" na cor da marca e um zoom que dissolve para revelar o site. Aparece uma vez por sessão e respeita a preferência de "reduzir animações" do usuário.',
+      pt: 'Site institucional one-page da Lessa Club, marca de roupas everyday (peças básicas em poliamida dupla premium). A página apresenta a coleção de três modelos (Shoulder, Essence, Babytee), conta a história da fundadora (Camille), explica o processo de compra e direciona toda a venda para o WhatsApp, sem carrinho, checkout ou backend próprio. O projeto inclui uma abertura animada (intro) embutida na própria página: a palavra "lessa" é revelada com um ponto de luz dourada acompanhando a escrita, seguida de um efeito de "ignição" na cor da marca e um zoom que dissolve para revelar o site. Aparece uma vez por sessão e respeita a preferência de "reduzir animações" do usuário.',
       en: 'One-page institutional site for Lessa Club, an everyday clothing brand (basic pieces in premium double polyamide). The page presents the collection of three models (Shoulder, Essence, Babytee), tells the founder\'s story (Camille), explains the purchase process, and routes all sales to WhatsApp, with no cart, checkout, or backend of its own. The project includes an animated intro built into the page itself: the word "lessa" is revealed with a golden point of light following the writing, followed by an "ignition" effect in the brand color and a zoom that dissolves to reveal the site. It appears once per session and respects the user\'s "reduce motion" preference.',
     },
     // link: { href: 'https://github.com/DerekCardoso' },
@@ -176,7 +176,7 @@ export const timeline: TimelineEntry[] = [
   {
     company: 'GymBro',
     role: { pt: 'Desenvolvedor Frontend/Fullstack Mobile', en: 'Frontend/Fullstack Mobile Developer' },
-    year: { pt: '2025 — hoje', en: '2025–present' },
+    year: { pt: '2025–hoje', en: '2025–present' },
     items: {
       pt: [
         'Desenho e implemento de ponta a ponta o fluxo de matchmaking do cadastro ao match compatível por academia, horário, grupo muscular e intensidade sustentado por convites, chat e gestão de parceiros',
@@ -197,7 +197,7 @@ export const timeline: TimelineEntry[] = [
   {
     company: 'Cotraservi (Coob+)',
     role: { pt: 'Frontend Developer', en: 'Frontend Developer' },
-    year: { pt: '2022 — hoje', en: '2022–present' },
+    year: { pt: '2022–hoje', en: '2022–present' },
     items: {
       pt: [
         'Desenvolvo e evoluo aplicação React para uso operação comercial, traduzindo regras de negócio em fluxos de tela usáveis',
