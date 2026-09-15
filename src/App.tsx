@@ -13,6 +13,14 @@ import { about, personal, projects, stackGroups, timeline, ui, type Locale, type
 const LangContext = createContext<Locale>('pt');
 const useLang = () => useContext(LangContext);
 
+type Theme = 'dark' | 'light';
+const THEME_KEY = 'theme';
+
+function getInitialTheme(): Theme {
+  const saved = localStorage.getItem(THEME_KEY);
+  return saved === 'light' ? 'light' : 'dark';
+}
+
 const skills = stackGroups.flatMap((g) => g.items);
 const featured = projects.filter((p) => p.cover);
 const others = projects.filter((p) => !p.cover);
@@ -46,9 +54,39 @@ const IconExternal = () => (
     <path d="M10 14 21 3" />
   </svg>
 );
+const IconSun = () => (
+  <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
+    <circle cx="12" cy="12" r="4.5" />
+    <path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8 6 18M18 6l1.8-1.8" />
+  </svg>
+);
+const IconMoon = () => (
+  <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
+    <path d="M20.5 14.5a8.5 8.5 0 1 1-9-11 7 7 0 0 0 9 11Z" />
+  </svg>
+);
+
+function ThemeToggle({ theme, onToggle }: { theme: Theme; onToggle: () => void }) {
+  const t = ui[useLang()];
+  return (
+    <button type="button" className="theme-toggle" onClick={onToggle} aria-label={t.ariaThemeToggle}>
+      {theme === 'dark' ? <IconSun /> : <IconMoon />}
+    </button>
+  );
+}
 
 /* -------------------------------- header -------------------------------- */
-function Header({ lang, onToggleLang }: { lang: Locale; onToggleLang: (l: Locale) => void }) {
+function Header({
+  lang,
+  onToggleLang,
+  theme,
+  onToggleTheme,
+}: {
+  lang: Locale;
+  onToggleLang: (l: Locale) => void;
+  theme: Theme;
+  onToggleTheme: () => void;
+}) {
   const t = ui[lang];
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -87,6 +125,7 @@ function Header({ lang, onToggleLang }: { lang: Locale; onToggleLang: (l: Locale
             EN
           </button>
         </div>
+        <ThemeToggle theme={theme} onToggle={onToggleTheme} />
         <a className="btn-outline resume" href={personal.cvUrl} download>
           {t.resume}
         </a>
@@ -402,6 +441,12 @@ function ProjectDetail({ project, onBack }: { project: Project; onBack: () => vo
 export default function App() {
   const [lang, setLang] = useState<Locale>('pt');
   const [selected, setSelected] = useState<Project | null>(null);
+  const [theme, setTheme] = useState<Theme>(getInitialTheme);
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem(THEME_KEY, theme);
+  }, [theme]);
 
   const handleBack = () => {
     setSelected(null);
@@ -420,7 +465,12 @@ export default function App() {
       ) : (
         <>
           <span id="top" />
-          <Header lang={lang} onToggleLang={setLang} />
+          <Header
+            lang={lang}
+            onToggleLang={setLang}
+            theme={theme}
+            onToggleTheme={() => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))}
+          />
           <SocialRail />
           <EmailRail />
           <main className="layout">

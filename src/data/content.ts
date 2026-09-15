@@ -278,6 +278,7 @@ export const ui: Record<
     ariaLinkedin: string;
     ariaWhatsapp: string;
     ariaEmail: string;
+    ariaThemeToggle: string;
     heroHi: string;
     heroSub: string;
     heroCta: string;
@@ -309,6 +310,7 @@ export const ui: Record<
     ariaLinkedin: 'LinkedIn',
     ariaWhatsapp: 'WhatsApp',
     ariaEmail: 'E-mail',
+    ariaThemeToggle: 'Alternar tema claro/escuro',
     heroHi: 'Olá, meu nome é',
     heroSub: 'Criando web e mobile.',
     heroCta: 'Ver meus projetos',
@@ -340,6 +342,7 @@ export const ui: Record<
     ariaLinkedin: 'LinkedIn',
     ariaWhatsapp: 'WhatsApp',
     ariaEmail: 'Email',
+    ariaThemeToggle: 'Toggle light/dark theme',
     heroHi: "Hi, my name is",
     heroSub: 'Building web and mobile.',
     heroCta: 'See my projects',

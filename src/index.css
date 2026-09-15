@@ -1,9 +1,11 @@
 /* ===========================================================================
    Portfólio Derek Cardoso — estilo v4.brittanychiang.com
-   Navy escuro + acento verde. Sem loader e sem animações de entrada.
+   Dois temas: escuro (navy + verde, padrão) e claro (off-white + preto/cinza).
+   Sem loader e sem animações de entrada.
    =========================================================================== */
 
 :root {
+  /* tema escuro (padrão) */
   --navy: #0a192f;
   --light-navy: #112240;
   --lightest-navy: #233554;
@@ -14,10 +16,29 @@
   --green: #64ffda;
   --green-tint: rgba(100, 255, 218, 0.1);
   --line: rgba(100, 255, 218, 0.35);
+  --bg-rgb: 10, 25, 47;
+  --shadow-rgb: 2, 12, 27;
+
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   --nav-h: 90px;
   --maxw: 1100px;
+}
+
+/* tema claro — off-white, preto, cinza */
+:root[data-theme='light'] {
+  --navy: #faf9f6;
+  --light-navy: #f0efe9;
+  --lightest-navy: #ddd9d0;
+  --slate: #6b6a64;
+  --light-slate: #47453f;
+  --lightest-slate: #171613;
+  --white: #0d0c0a;
+  --green: #0d7a5f;
+  --green-tint: rgba(13, 122, 95, 0.08);
+  --line: rgba(13, 122, 95, 0.35);
+  --bg-rgb: 250, 249, 246;
+  --shadow-rgb: 30, 29, 26;
 }
 
 * {
@@ -37,6 +58,7 @@ body {
   color: var(--slate);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  transition: background 0.25s ease, color 0.25s ease;
 }
 
 a {
@@ -104,9 +126,9 @@ button {
 
 .header.is-scrolled {
   height: 72px;
-  background: rgba(10, 25, 47, 0.85);
+  background: rgba(var(--bg-rgb), 0.85);
   backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+  box-shadow: 0 10px 30px -10px rgba(var(--shadow-rgb), 0.7);
 }
 
 .logo {
@@ -173,6 +195,24 @@ button {
 
 .lang-toggle button.is-active {
   color: var(--green);
+  background: var(--green-tint);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--lightest-navy);
+  border-radius: 5px;
+  color: var(--slate);
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--green);
+  border-color: var(--green);
   background: var(--green-tint);
 }
 
@@ -565,7 +605,7 @@ button {
 .feature-tint {
   position: absolute;
   inset: 0;
-  background: rgba(10, 25, 47, 0.4);
+  background: rgba(var(--bg-rgb), 0.4);
   transition: background 0.3s ease;
 }
 
@@ -613,7 +653,7 @@ button {
   padding: 22px;
   border-radius: 6px;
   background: var(--light-navy);
-  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  box-shadow: 0 10px 30px -15px rgba(var(--shadow-rgb), 0.7);
   color: var(--light-slate);
   font-size: 0.92rem;
 }
@@ -676,7 +716,7 @@ button {
     border-radius: 0;
   }
   .feature-tint {
-    background: rgba(10, 25, 47, 0.55);
+    background: rgba(var(--bg-rgb), 0.55);
   }
   .feature-content {
     text-align: left;
@@ -716,7 +756,7 @@ button {
   padding: 28px 24px;
   border-radius: 8px;
   background: var(--light-navy);
-  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+  box-shadow: 0 10px 30px -15px rgba(var(--shadow-rgb), 0.7);
   transition: transform 0.2s ease;
 }
 
