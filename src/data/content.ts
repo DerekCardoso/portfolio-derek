@@ -8,7 +8,6 @@ export type LocalizedList = { pt: string[]; en: string[] };
 export const personal = {
   name: 'Derek Cardoso',
   fullName: 'Derek Cardoso dos Santos',
-  logo: 'DEREK',
   role: 'Frontend & Mobile Developer',
   location: 'Praia Grande – SP',
   email: 'derek.cardoso@gmail.com',
@@ -16,15 +15,7 @@ export const personal = {
   linkedin: 'https://linkedin.com/in/derek-cardoso',
   github: 'https://github.com/DerekCardoso',
   cvUrl: '/cv/Resume-Derek-Cardoso.pdf',
-  tagline: ['Só mais um dev frontend.', 'Nada de especial. A não ser que você', 'ache que seja.'],
 };
-
-export const menu = [
-  { id: 'projetos', label: 'PROJETOS' },
-  { id: 'trajetoria', label: 'TRAJETÓRIA' },
-  { id: 'sobre', label: 'SOBRE' },
-  { id: 'contato', label: 'CONTATO' },
-];
 
 export type Project = {
   id: string;
