@@ -119,6 +119,12 @@ public/
   foto-derek.jpeg
 ```
 
+## Currículo
+
+`CV-Derek-v2-e-plano.md`, na raiz do repo, é a versão atual do currículo: reescrita completa em inglês (foco em vagas internacionais) mais um plano de 8 semanas para o projeto GymBro com IA, que sustenta os pontos novos do currículo.
+
+O botão CV do site baixa `public/cv/Resume-Derek-Cardoso.pdf`, que ainda será atualizado a partir dessa versão.
+
 ## Próximos passos possíveis
 
 1. Usar o clipe `walk` (já carregado, hoje sem uso) — por exemplo, andar na volta para a home e correr só na ida.
